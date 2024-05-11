@@ -22,9 +22,9 @@ const Index = () => {
   const color = useColorModeValue("gray.900", "gray.50");
 
   return (
-    <Container centerContent maxW="100%" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="linear-gradient(to right, #0D0D0D, #1A1A1A)" color="#CCCCCC">
-      <Box p={5} shadow="2xl" borderWidth="1px" borderRadius="lg" overflow="hidden" bg="#121212" color="#E0E0E0">
-        <Text fontSize="6xl" fontFamily="'Roboto Mono', monospace" fontWeight="bold" animation="fadeIn 1s">
+    <Container centerContent maxW="100%" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="linear-gradient(to right, #0D0D0D, #333333, #1A1A1A)" color="#CCCCCC">
+      <Box p={5} shadow="2xl" borderWidth="1px" borderRadius="lg" overflow="hidden" bg="#121212" color="#E0E0E0" animation="pulse 2s infinite ease-in-out">
+        <Text fontSize="6xl" fontFamily="'Roboto Mono', monospace" fontWeight="bold" animation="fadeIn 1s" textShadow="2px 2px 4px #000000">
           <span key={time}>{getTimeInCalifornia()}</span>
         </Text>
       </Box>
