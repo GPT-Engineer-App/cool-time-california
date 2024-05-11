@@ -22,9 +22,9 @@ const Index = () => {
   const color = useColorModeValue("gray.900", "gray.50");
 
   return (
-    <Container centerContent maxW="100%" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="black" color="white">
-      <Box p={5} shadow="md" borderWidth="1px" borderRadius="lg" overflow="hidden" bg={bg} color={color}>
-        <Text fontSize="5xl" fontFamily="monospace" fontWeight="bold">
+    <Container centerContent maxW="100%" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="linear-gradient(to right, #141E30, #243B55)" color="white">
+      <Box p={5} shadow="2xl" borderWidth="1px" borderRadius="lg" overflow="hidden" bg={bg} color={color}>
+        <Text fontSize="6xl" fontFamily="'Courier New', Courier, monospace" fontWeight="bold">
           <FaClock /> {getTimeInCalifornia()}
         </Text>
         <Text mt={4} fontSize="xl" color="gray.500">
