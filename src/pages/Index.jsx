@@ -25,10 +25,7 @@ const Index = () => {
     <Container centerContent maxW="100%" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="linear-gradient(to right, #0D0D0D, #1A1A1A)" color="#CCCCCC">
       <Box p={5} shadow="2xl" borderWidth="1px" borderRadius="lg" overflow="hidden" bg="#121212" color="#E0E0E0">
         <Text fontSize="6xl" fontFamily="'Roboto Mono', monospace" fontWeight="bold" animation="fadeIn 1s">
-          <FaClock /> <span key={time}>{getTimeInCalifornia()}</span>
-        </Text>
-        <Text mt={4} fontSize="xl" color="#666666">
-          Current Time in California
+          <span key={time}>{getTimeInCalifornia()}</span>
         </Text>
       </Box>
     </Container>
